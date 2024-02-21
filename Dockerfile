@@ -13,7 +13,7 @@ COPY App.java /app/App.java
 
 # Install OpenJDK 11
 #RUN apt-get update && \
-    apt-get install -y openjdk-11-jdk
+    #apt-get install -y openjdk-11-jdk
 
 # Copy Java source code
 #COPY App.java /app/App.java
