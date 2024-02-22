@@ -1,9 +1,9 @@
-#FROM ubuntu:latest
-#COPY calculator.sh /app/calculator.sh
-# CMD sed -i 's/\r$//' /app/calculator.sh
 FROM ubuntu:latest
+COPY calculator.sh /app/calculator.sh
+# CMD sed -i 's/\r$//' /app/calculator.sh
+#FROM ubuntu:latest
 
-COPY App.java /app/App.java
+#COPY App.java /app/App.java
 
 # Convert line endings (if needed)
 #RUN sed -i 's/\r$//' /app/app.java
@@ -19,7 +19,7 @@ COPY App.java /app/App.java
 #COPY App.java /app/App.java
 
 # Convert line endings
-RUN sed -i 's/\r$//' /app/App.java
+#RUN sed -i 's/\r$//' /app/App.java
 
 # Compile and run Java code
-CMD ["javac", "/app/App.java", "&&", "java", "-classpath", "/app", "App"]
+#CMD ["javac", "/app/App.java", "&&", "java", "-classpath", "/app", "App"]
